@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <title>Blocked video</title>
+  <circle cx="64" cy="64" r="60" fill="#fff"/>
+  <path d="M50 38v52l44-26z" fill="#424242"/>
+  <circle cx="64" cy="64" r="54" fill="none" stroke="#e53935" stroke-width="12"/>
+  <path d="M25.8 25.8L102.2 102.2" stroke="#e53935" stroke-width="12"/>
+</svg>
