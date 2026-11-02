@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "YouTube Block (managed)",
   "version": "1.0.0",
-  "description": "Blocks YouTube channels and videos listed in managed policy. Intended for schools; it has no user interface and no settings of its own.",
+  "description": "Blocks the YouTube channels and videos your school lists in managed policy. No settings or interface for students.",
   "minimum_chrome_version": "111",
   "icons": {
     "16": "icons/16.png",
