@@ -43,6 +43,10 @@ Changes take effect without a restart: Chrome pushes policy updates to the exten
 
 Recommended companion policies: `DeveloperToolsAvailability` set to 2 (students cannot open DevTools and disable page scripts), `IncognitoModeAvailability` set to 1 and `BrowserGuestModeEnabled` set to false (force-installed extensions do not run in those modes), and `ExtensionInstallBlocklist` set to `*` with your own allow list so a second extension cannot interfere. The extension does nothing about third-party YouTube front ends; use `URLBlocklist` for those.
 
+## Privacy
+
+The extension collects nothing about its users. See [PRIVACY.md](PRIVACY.md); the Web Store listing needs a link to it, for example `https://github.com/turquoise-turtle/yt-block/blob/main/PRIVACY.md`.
+
 ## Layout
 
 - [extension/manifest.json](extension/manifest.json): permissions are `storage` and `declarativeNetRequest` plus host access to the YouTube domains. Requires Chrome 111 or later (main-world content scripts).
