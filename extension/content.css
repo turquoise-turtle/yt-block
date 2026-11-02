@@ -1,0 +1,74 @@
+/* State classes are set on <html> by page.js. */
+
+/* A blocked video or channel page. */
+html.ytb-blocked #movie_player,
+html.ytb-blocked #shorts-player {
+  visibility: hidden !important;
+}
+html.ytb-blocked #comments,
+html.ytb-blocked ytd-comments,
+html.ytb-blocked ytd-comments-entry-point-header-renderer,
+html.ytb-blocked #secondary,
+html.ytb-blocked #related,
+html.ytb-blocked ytd-engagement-panel-section-list-renderer,
+html.ytb-blocked .ytp-endscreen-content {
+  display: none !important;
+}
+html.ytb-blocked-channel ytd-page-manager {
+  visibility: hidden !important;
+}
+
+/* The block image, placed inside the hidden player (or over the page for a channel). */
+.ytb-overlay {
+  position: absolute;
+  inset: 0;
+  visibility: visible !important;
+  z-index: 2147483000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 16px;
+  background: #1f1f1f;
+  color: #f1f1f1;
+  text-align: center;
+  font: 16px/1.4 Roboto, system-ui, -apple-system, sans-serif;
+}
+.ytb-overlay.ytb-fixed {
+  position: fixed;
+  top: 56px;
+}
+.ytb-overlay svg {
+  width: 96px;
+  max-width: 30%;
+  height: auto;
+}
+.ytb-overlay .ytb-title {
+  margin: 12px 0 4px;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+.ytb-overlay .ytb-msg {
+  margin: 0;
+  font-size: 0.95em;
+  color: #aaa;
+}
+
+/* Optional policy: hide comments on every video. */
+html.ytb-hide-comments #comments,
+html.ytb-hide-comments ytd-comments,
+html.ytb-hide-comments ytd-comments-entry-point-header-renderer {
+  display: none !important;
+}
+
+/* Optional policy: hide recommendations (home feed, sidebar, end screens, autoplay). */
+html.ytb-hide-recs #related,
+html.ytb-hide-recs ytd-watch-next-secondary-results-renderer,
+html.ytb-hide-recs ytd-browse[page-subtype="home"] ytd-rich-grid-renderer,
+html.ytb-hide-recs .ytp-endscreen-content,
+html.ytb-hide-recs .ytp-ce-element,
+html.ytb-hide-recs .ytp-autonav-endscreen-countdown-overlay,
+html.ytb-hide-recs ytd-compact-autoplay-renderer {
+  display: none !important;
+}

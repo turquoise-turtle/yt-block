@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "blockedVideos": {
+      "title": "Blocked videos",
+      "description": "YouTube video IDs (11 characters) or video URLs to block.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "blockedChannels": {
+      "title": "Blocked channels",
+      "description": "YouTube channel IDs (UC...), handles (@name) or channel URLs to block.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "hideComments": {
+      "title": "Hide comments on every video",
+      "type": "boolean"
+    },
+    "hideRecommendations": {
+      "title": "Hide recommended videos everywhere (home feed, sidebar, end screens)",
+      "type": "boolean"
+    },
+    "hideInFeeds": {
+      "title": "Hide blocked videos and channels from feeds and search results (default true)",
+      "type": "boolean"
+    },
+    "blockMessage": {
+      "title": "Message shown in place of a blocked video",
+      "type": "string"
+    }
+  }
+}

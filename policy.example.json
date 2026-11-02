@@ -1,0 +1,16 @@
+{
+  "blockedVideos": [
+    "dQw4w9WgXcQ",
+    "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+    "https://youtu.be/9bZkp7q19f0"
+  ],
+  "blockedChannels": [
+    "UC4QobU6STFB0P71PMvOGN5A",
+    "@mrbeast",
+    "https://www.youtube.com/@jawed"
+  ],
+  "hideComments": false,
+  "hideRecommendations": false,
+  "hideInFeeds": true,
+  "blockMessage": "This content has been blocked by your school. Ask your teacher if you think this is a mistake."
+}
